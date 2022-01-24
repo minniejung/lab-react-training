@@ -1,0 +1,19 @@
+import React from 'react';
+import Rating from './Rating'
+
+const DriverCard = (props) => {
+  return (
+  <div className="DriverCard">
+      <div className="photo">
+        <img src={props.img} alt={props.name} />
+      </div>
+      <div className="detail">
+        <p>{props.name}</p>
+        <p><Rating>{props.rating}</Rating></p>
+        <p>{props.car.model} - {props.car.licensePlate}</p>
+      </div>
+  </div>
+  );
+};
+
+export default DriverCard;
