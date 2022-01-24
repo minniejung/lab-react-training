@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 10px;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.IdCard {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  border: 1px solid grey;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.BoxColor {
+  width: 200px;
+  height: 50px;
+}
+
+.CreditCard {
+  border-radius: 10px;
+  width: 500px;
+}
+
+.CreditCardLogo {
+  text-align: right;
+}
+
+.CreditCardLogo img {
+  width: 100px;
+}
+
+.CreditCardNumber {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
 }
