@@ -1,6 +1,10 @@
 * {
   margin: 0;
-  padding: 10px;
+  padding: 5px 10px;
+}
+
+h2 {
+  margin-top: 30px;
 }
 
 .App {
@@ -58,7 +62,9 @@
 
 .CreditCard {
   border-radius: 10px;
-  width: 500px;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 .CreditCardLogo {
@@ -84,3 +90,9 @@
   display: flex;
   flex-direction: row;
 }
+
+.LikeButton button {
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+

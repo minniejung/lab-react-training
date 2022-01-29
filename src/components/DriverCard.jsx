@@ -9,7 +9,7 @@ const DriverCard = (props) => {
       </div>
       <div className="detail">
         <p>{props.name}</p>
-        <p><Rating>{props.rating}</Rating></p>
+        <Rating>{props.rating}</Rating>
         <p>{props.car.model} - {props.car.licensePlate}</p>
       </div>
   </div>

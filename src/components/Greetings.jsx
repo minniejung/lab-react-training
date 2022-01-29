@@ -1,12 +1,19 @@
 import React from 'react';
 
-const Greetings = (props) => {
-  console.log(props);
+const Greetings = ({ lang, children }) => {
+  const translator = {
+    de: 'Hallo',
+    en: 'Hello',
+    es: 'Hola',
+    fr: 'Bonjour',
+    tx: 'Howdy',
+  };
 
   return (
     <div className="Greetings">
       <p>
-        {props.lang === 'fr' ? 'Bonjour' : 'Hallo'} {props.children}
+        {translator[lang]} {children}
+        {/* {lang === 'fr' ? 'Bonjour' : 'Hallo'} {children} */}
       </p>
     </div>
   );

@@ -1,12 +1,13 @@
 import React from 'react';
 
 const CreditCard = (props) => {
-  console.log(props);
-
   const type = props.type === 'Visa' ? `visa.png` : `master-card.svg`;
 
   return (
-    <div className="CreditCard" style={{ backgroundColor: `${props.bgColor}`, color: `${props.color}` }}>
+    <div
+      className="CreditCard"
+      style={{ backgroundColor: `${props.bgColor}`, color: `${props.color}` }}
+    >
       <div className="CreditCardLogo">
         <img src={type} alt={props.type}></img>
       </div>

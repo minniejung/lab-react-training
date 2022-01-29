@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Random = (props) => {
-  console.log(props);
+  // console.log(props);
 
   function result(min, max) {
       min = Math.ceil(min);

@@ -3,7 +3,7 @@ import React from 'react';
 const Rating = (props) => {
   function stars() {
     let num = Math.round(props.children);
-    console.log(num);
+    // console.log(num);
 
     if (num === 0) return `☆☆☆☆☆`;
     if (num === 1) return `★☆☆☆☆`;
