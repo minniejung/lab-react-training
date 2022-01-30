@@ -6,23 +6,32 @@ import { useState } from 'react';
 
 const FaceBook = () => {
   const [onePerson, setList] = useState(FbList);
-  // console.log(FbList[0].country)
 
-  function findByCountry(country) {
-    let copy = [...FbList];
-    const foundedList = copy.filter((el) => el.country === country);
-    console.log(foundedList);
-    setList(copy);
-  }
+  const countriesList = (country) => {
+    let list = [];
+    country
+      .map((el) => el.country)
+      .forEach((el) => (!list.includes(el) ? list.push(el) : ''));
+    return list;
+  };
+
+  let countries = countriesList(FbList);
+
+  const findByCountry = (country) => {
+    country === ''
+      ? setList(FbList)
+      : setList(FbList.filter((el) => el.country === country));
+  };
 
   return (
     <div className="FaceBook">
-      {FbList.map((country) => (
-        <button onClick={() => findByCountry(onePerson.country)}>
-          {country.country}
+      {countries.map((country) => (
+        <button key={country} onClick={() => findByCountry(`${country}`)}>
+          {country}
         </button>
       ))}
-      {FbList.map((info) => (
+
+      {onePerson.map((info) => (
         <div
           className="eachPerson"
           style={{

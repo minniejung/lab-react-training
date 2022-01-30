@@ -132,7 +132,7 @@ function App() {
       <h2>Iteration 12 </h2>
       <h3>List and Keys | NumbersTable</h3>
       <NumbersTable limit={12} />
-      <h2>Iteration 13 ⭕️ & 14 ❌</h2>
+      <h2>Iteration 13 & 14</h2>
       <h3>List and Keys - FaceBook | Simple & Advanced</h3>
       <FaceBook />
       <h2>Iteration 15</h2>
