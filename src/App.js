@@ -11,9 +11,10 @@ import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Dice from './components/Dice';
 import Carousel from './components/Carousel';
-import NumbersTable from './components/NumbersTable'
+import NumbersTable from './components/NumbersTable';
 import FaceBook from './components/FaceBook';
 import SignupPage from './components/SignupPage';
+import SingleColorPicker from './components/SingleColorPicker';
 
 function App() {
   return (
@@ -118,7 +119,7 @@ function App() {
       <h2>Iteration 10</h2>
       <h3>State: Dice</h3>
       <Dice />
-      <h2>Iteration 11 ❌</h2>
+      <h2>Iteration 11</h2>
       <h3>State: Carousel</h3>
       <Carousel
         images={[
@@ -128,21 +129,18 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg',
         ]}
       />
-      <h2>Iteration 12 ❌</h2>
+      <h2>Iteration 12 </h2>
       <h3>List and Keys | NumbersTable</h3>
       <NumbersTable limit={12} />
-
-      <h2>Iteration 13</h2>
-      <h3>List and Keys - FaceBook | Simple</h3>
+      <h2>Iteration 13 ⭕️ & 14 ❌</h2>
+      <h3>List and Keys - FaceBook | Simple & Advanced</h3>
       <FaceBook />
-
-      <h2>Iteration 14 | List and Keys - FaceBook ❌</h2>
-      <h3>List and Keys - FaceBook | Advanced</h3>
       <h2>Iteration 15</h2>
       <h3>Form - SignupPage</h3>
       <SignupPage />
-      <h2>Iteration 16 ❌</h2>
+      <h2>Iteration 16</h2>
       <h3>Lifting State Up - RGBColorPicker</h3>
+      <SingleColorPicker />
     </>
   );
 }

@@ -1,31 +1,30 @@
+import React from 'react';
+import { useState } from 'react';
 
-import React from "react";
-import { useState } from "react";
-
-const Carousel = ({images}) => {
+const Carousel = ({ images }) => {
   const [index, setIndex] = useState(0);
-  
-  const goLeft = () => {
-    // console.log(index);
-    setIndex((index) => { 
-    const lastIdx = index - 1;
-    return lastIdx < 0 ? lastIdx + images.length : lastIdx;
-  })};
-
-  const goRight = () => {
-    setIndex((index) => { 
-      const lastIdx = index + 1;
-      return lastIdx < 0 ? lastIdx + images.length : lastIdx;
-  })}
 
   return (
-    <div className="Carousel">      
+    <div className="Carousel">
       <div className="imgBox">
-        <img src= {images[index]} alt=""/>
+        <img src={images[index]} alt="" />
       </div>
-      <button onClick={goLeft}>Left</button> <button onClick={goRight}>Right</button>
+      <button
+        onClick={() => {
+          index <= 0 ? setIndex(images.length - 1) : setIndex(index - 1);
+        }}
+      >
+        Left
+      </button>
+      <button
+        onClick={() => {
+          index < images.length - 1 ? setIndex(index + 1) : setIndex(0);
+        }}
+      >
+        Right
+      </button>
     </div>
   );
-}
+};
 
 export default Carousel;
