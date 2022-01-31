@@ -7,10 +7,6 @@ const SingleColorPicker = () => {
     numB: 0,
   });
 
-  // const [numR, setNumR] = useState(0);
-  // const [numG, setNumG] = useState(0);
-  // const [numB, setNumB] = useState(0);
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setValues((prevValues) => ({
@@ -18,20 +14,7 @@ const SingleColorPicker = () => {
       [name]: value,
     }));
   };
-
-  // const handleColorR = (e) => {
-  //   const colorNum = Number(e.target.value);
-  //   setNumR(colorNum);
-  // };
-  // const handleColorG = (e) => {
-  //   const colorNum = Number(e.target.value);
-  //   setNumG(colorNum);
-  // };
-  // const handleColorB = (e) => {
-  //   const colorNum = Number(e.target.value);
-  //   setNumB(colorNum);
-  // };
-
+  
   return (
     <>
       <div className="singleColor">
